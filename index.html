@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Daniele's Portfolio</title>
+		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap" rel="stylesheet"> 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		  <script src="js/modernizr.custom.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			
+			<!---->
+			<header id="header" class="codrops-header">
+
+				<button class="slider-switch">Switch view</button>
+			</header>
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>Demo interactions</h2>
+					<span class="info-drag">Drag Sliders</span>
+					<span class="info-keys">Use Arrows</span>
+					<span class="info-switch">Switch view</span>
+					<button>Got it!</button>	
+				</div>
+			</div>
+			<div id="slideshow" class="dragslider">
+				<section id="handler" class="img-dragger img-dragger-large dragdealer">
+					<div class="handle">
+						<div class="slide" data-content="content-1">
+							<div class="img-wrap">
+								
+							</div>
+							<div class="text-container">
+								<svg viewBox="0 0 24 24" width="56" height="56" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" style="margin-bottom: 5px;">
+									<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>
+								</svg>
+
+						<h2 class="intro">
+							<span>Welcome to the portfolio <br>
+							of Daniele De Pietri <br> 	
+							</span>
+						Sorry, this site is not optimized for mobile.
+						<span>*Proceed at your own risk <br> 	
+							</span></h2>
+
+								<h2 class="bigscreen">Hello 
+									<span>Welcome to the portfolio <br>
+										of Daniele De Pietri <br> <br> 
+						
+										<a href="img/CV_DANIELE_DEPIETRI_2020.pdf" style="color: black;">
+											<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>	
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+											</svg> Download CV
+										</a>
+									</span></h2>
+
+									<div style=" position:fixed; bottom: 40px">
+									<h2>
+									<span>	
+										<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+										 <br>
+										 Press right arrow, <br> 
+										 drag or use the button <br> 
+										 to go forward	
+									</span></h2>
+								</div>
+
+								<div style=" position:fixed; bottom: 40px; left: 35vw">
+									<h2>
+									<span>	
+										<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>										 <br>
+										 Move images around <br> 
+										 as you prefer them,  <br> 
+										 click on videos to play/stop
+									</span></h2>
+								</div>
+
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-2">
+							<div class="img-wrap">
+								<img class="image img1" src="img/aboca/03.gif" alt="img2"/></div>
+
+								<video muted onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img2" >
+									<source src="img/aboca/Aboca_museo_2.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+								<video muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img4" >
+									<source src="img/aboca/trees.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+								<video autoplay muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img3" >
+									<source src="img/aboca/Aboca_museo_3.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+								
+								
+								<div class="text-container">
+									<h2> 
+										<span><b>2019</b> </span>
+										Aboca company museum
+										<span>
+										For the interactive museum experience designed by Dotdotdot studio 
+									I produced two different motion design pieces, writing some scripts 
+								to be executed inside Adobe After Effects.</span></h2>
+									<h3 id="orange">motion</h3><h3 id="darkpurple">adobe script</h3>
+								</div>
+								<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-3">
+							<div class="img-wrap">
+								<img class="image img7" src="img/raffaello/generative2.jpg" alt="img2"/>
+								<img class="image img8" src="img/raffaello/generative3.jpg" alt="img2"/>
+								<img class="image img9" src="img/raffaello/generative4.jpg" alt="img2"/>
+								<img class="image img10" src="img/raffaello/generative5.jpg" alt="img2"/>
+								<img class="image img6" src="img/raffaello/waterfall.png" alt="img2"/>
+
+								<video autoplay muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img5" >
+									<source src="img/raffaello/waterfall2.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+								<video autoplay muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img11" >
+									<source src="img/raffaello/water.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+							</div>
+							<div class="text-container">
+								<h2> 
+									<span><b>2020</b> </span>
+									Generative light waterfall
+									<span>
+									Before the pandemy hit, an immersive experience designed 
+									by Dotdotdot studio was
+									going to be set in a roman archeological site. 
+									During the visit, 
+									a waterfall of white particles I coded in Processing,
+									would be projected where millennia ago the water once flew.
+									In this page you can see some of the "happy accidents" 
+									born during the coding of the motion graphic.</span>
+								</h2>
+
+									<a href="https://github.com/danieledep/waterfall-video">
+										<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+										</svg> danieledep/waterfall-video
+									</a>
+								
+									
+								<h3 id="orange">motion</h3><h3 id="blue">processing</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-4">
+							<div class="img-wrap">
+								<img class="image img13" src="img/enel/EXTRA-DOTDOTDOT_Enel_Trezzo.jpg" alt="img2"/>
+								<img class="image img12" src="img/enel/06-DOTDOTDOT_Enel_Trezzo.jpg" alt="img2"/>
+
+								<video autoplay muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img14" >
+									<source src="img/enel/led.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+								<video autoplay muted loop onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img11" >
+									<source src="img/enel/phone.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+
+							</div>
+							<div class="text-container">
+								<h2> 
+									<span><b>2018</b> </span>
+									Kinect energy game
+									<span>
+									For the interactive experience inside the oldest 
+									hydroelectric powerplant in Italy 
+									commissioned by Enel energy company,
+									Dotdotdot studio designed 
+									a rich interactive journey across the building.
+									I produced the user interface and the visual assets of a game 
+									where visitors are encouraged to move their bodies, 
+									by seeing themselves through the lens of a Microsoft Kinect,
+									in order to get a feeling of how much our body is able to produce energy too. 
+								</span>
+								</h2>
+									
+								<h3 id="orange">motion</h3><h3 id="purple">ux</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-5">
+							<div class="img-wrap">
+								<img class="image img15" src="img/rew/IMG_1790.JPG" alt="img2"/>
+								<img class="image img12" src="img/rew/Screenshot.png" alt="img2"/>
+							</div>
+							<div class="text-container">
+								<h2> 
+									<span><b>2020 - PERSONAL PROJECT</b> </span>
+									REW game & controller
+									<span>
+									With the intent to dive into P5.js I rewrote a game I developed during a Processing course in university.
+									I added new capabilities and imagined a controller for the game. 
+									To stay true
+									to the game's theme I used an old music cassette in reminescence of when we would stick a pencil to rewind its tape.
+									So I connected its wheels to an Arduino which then uses node.js to talk to the browser. 
+									Please try it in the browser from the Github link but it needs some fixes, because as the calculations become
+									more intensive the game tends to slow down. </span>
+								</h2>
+
+									<a href="https://github.com/danieledep/REW__P5">
+										<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+										</svg> danieledep/REW__P5
+									</a>
+								
+									
+								<h3 id="red">p5.js</h3><h3 id="green">arduino</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-6">
+							<div class="img-wrap">
+								<img class="image img6" src="img/rez-story/Artboard 1@3x-100 copy.jpg" alt="img2"/>
+								<img class="image img16" src="img/rez-story/Artboard 1@3x-100.jpg" alt="img2"/>
+								<img class="image img17" src="img/rez-story/rezcover.png" alt="img2"/>
+							</div>
+							<div class="text-container">
+								<h2> 
+									<span><b>2016</b> </span>
+									Réz-story Thesis
+									<span>
+										I wanted to focus my thesis project on my hometown, 
+										Reggio Emilia, a medium italian city full of history. 
+										After some considerations on the state of social media 
+										and innovative museum experiences, I set as main goal of the project to keep alive the local history 
+										by curating a web publication which leveraged social media to dialogue, 
+										collaborate with and promote historical and neighbourhood associations. 
+										Especially it used the Twitter platform to position stories and content around the city.</span>
+								</h2>
+
+									<a href="https://github.com/danieledep/rez-story">
+										<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+										</svg> danieledep/rez-story
+									</a>
+								
+									
+								<h3 id="purple">ux</h3><h3 id="darkred">ruby-on-rails</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-7">
+							<div class="img-wrap">
+								<img class="image img19" src="img/mars/canvas.png" alt="img2"/>
+								<img class="image img20" src="img/mars/index copy.png" alt="img2"/>
+								<img class="image img18" src="img/mars/paper-mockup.jpg" alt="img2"/>
+
+							</div>
+							<div class="text-container" style="top: 6% !important;">
+								<h2> 
+									<span><b>2020 - PERSONAL PROJECT</b> </span>
+									First Mars calendar
+									<span>
+										During the pandemic I picked a project that would be a good exercise to learn new things. 
+										I created this web-app which uses the Vue framework and lets you scroll through all the Mars' 668 sols.
+										It calls the NASA APIs to get the rovers' pictures, applying to them a dithering effect (You can't waste ink on Mars).
+										It shows other vital information: a Mars - Earth - Sun system rendered with Three.js which shows positions and window of opportunities for one-way trips. 
+										And an explorable Mars topographic map using the D3 library. Not finished it yet, but getting closer everyday. Works better on Chrome.</span>
+								</h2>
+
+									<a href="https://danieledep.github.io/mars_dist/">
+										<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+										</svg> danieledep/mars_dist
+									</a>
+
+									<a href="https://danieledep.github.io/mars_map_dist/">
+										<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+											<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+										</svg> danieledep/mars_map_dist
+									</a>
+								
+									
+								<h3 id="lightblue">three.js</h3><h3 id="yellow">D3</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+						<div class="slide" data-content="content-8">
+							<div class="img-wrap">
+								
+								<video autoplay loop muted onclick="this.paused ? this.play() : this.pause();" id="video" class="video image img12" >
+									<source src="img/columns/columns.mp4"
+											type="video/mp4">
+									Sorry, your browser doesn't support embedded videos.
+								</video>
+								
+							</div>
+							<div class="text-container">
+								<h2>
+									<span><b>2020 - PERSONAL PROJECT</b> </span>
+									Web GL Sketches<span>I'm still on the path to learn webGL, so I try to follow the online tutorials i find the most interesting.</span></h2>
+								<a href="https://github.com/danieledep/columns-noise-webgl">
+									<svg aria-label="Repository" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img">
+										<path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+									</svg> danieledep/columns-noise-webgl
+								</a>
+					
+								<h3 id="lightblue">three.js</h3><h3 id="darkblue">shaders</h3>
+							</div>
+							<button class="content-switch"></button>
+						</div>
+					</div>
+				</section><!-- /img-dragger-->
+	
+			</div>
+		</div><!-- /container --> 
+		<script src="js/dragdealer.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/dragslideshow.js"></script>
+		<script>
+			(function() {
+
+				var overlay = document.getElementById( 'overlay' ),
+					overlayClose = overlay.querySelector( 'button' ),
+					header = document.getElementById( 'header' )
+					switchBtnn = header.querySelector( 'button.slider-switch' ),
+					toggleBtnn = function() {
+						if( slideshow.isFullscreen ) {
+							classie.add( switchBtnn, 'view-maxi' );
+						}
+						else {
+							classie.remove( switchBtnn, 'view-maxi' );
+						}
+					},
+					toggleCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.add( header, 'hide' );
+						}
+					},
+					toggleCompleteCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.remove( header, 'hide' );
+						}
+					},
+					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), { 
+						// toggle between fullscreen and minimized slideshow
+						onToggle : toggleBtnn,
+						// toggle the main image and the content view
+						onToggleContent : toggleCtrls,
+						// toggle the main image and the content view (triggered after the animation ends)
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+					toggleSlideshow = function() {
+						slideshow.toggle();
+						toggleBtnn();
+					},
+					closeOverlay = function() {
+						classie.add( overlay, 'hide' );
+					};
+
+				// toggle between fullscreen and small slideshow
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// close overlay
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+		</script>
+
+<script>
+
+	var images = document.getElementsByClassName("image");	
+
+	//videos.addEventListener('click', this.pause(), false);
+
+	for (var i = 0; i < images.length; i++) {
+		images[i].addEventListener('click', showUp, false);
+		images[i].addEventListener('mousedown', dragMouseDown, false);
+		
+	}
+
+	function showUp() {
+
+		var allImages = document.getElementsByClassName('image');
+		for (var i=0, len=allImages.length|0; i<len; i=i+1|0) {
+			allImages[i].style.zIndex = "1";
+		}
+		this.style.zIndex = "10";
+		}
+
+		var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+	document.onmouseup = closeDragElement;
+	this.setAttribute("id", "moving");
+    // call a function whenever the cursor moves:
+	document.onmousemove = elementDrag;
+
+	//disable dragdealer when moving images
+	Dragdealer.prototype.disable();
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    document.getElementById('moving').style.top = ( document.getElementById('moving').offsetTop - pos2) + "px";
+	document.getElementById('moving').style.left = ( document.getElementById('moving').offsetLeft - pos1) + "px";
+
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+	document.onmousemove = null;
+	document.getElementById('moving').removeAttribute("id", "moving");
+	Dragdealer.prototype.enable();
+  }
+
+
+		  </script>
+
+	</body>
+</html>
