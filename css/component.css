@@ -104,8 +104,9 @@ html.js,
 
 h3 {
 	display: inline-block;
+	font-size: 18px !important;
 	color: white;
-	padding: 15px;
+	padding: 12px 18px;
 	margin: 6px 6px 6px 6px;
 	font-size: .95em;
 	font-family: 'DM Mono', monospace;
@@ -246,6 +247,15 @@ button.slider-switch:hover {
 -moz-box-shadow: -1px 4px 43px -15px rgba(0,0,0,0.6);
 }
 
+.shape-shadow {
+	box-shadow: -1px 4px 43px -15px rgba(0,0,0,0) !important;
+-webkit-box-shadow: -1px 4px 43px -15px rgba(0,0,0,0) !important;
+-moz-box-shadow: -1px 4px 43px -15px rgba(0,0,0,0) !important;
+filter: drop-shadow(-1px 4px 15px  rgba(0,0,0,0.3));
+-webkit-filter: drop-shadow(-1px 4px 15px rgba(0,0,0,0.3));
+-moz-filter: drop-shadow(-1px 4px 15px rgba(0,0,0,0.3));
+}
+
 .img1 {
 	height: 40%;
 	right: 6%;
@@ -366,12 +376,18 @@ top: 5%;
     top: 68%;
 }
 
+.img21 {
+	height: 44%;
+	right: 7%;
+	top: 32%;
+}
+
 .text-container {
 	position: absolute;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 	width: 35%;
-	padding-left: 8%;
+	padding-left: 6%;
 	top: 7%;
 }
 
@@ -426,10 +442,22 @@ top: 5%;
 	overflow: visible;
 	}
 
+	button.content-switch-home {
+		position: relative;
+		top: 40%;
+		right: 16%;
+	}
+
 	button.content-switch {
 		position: relative;
 		top: 40%;
 		right: 16%;
+	}
+
+	button.content-switch-left {
+		position: relative;
+		top: 40%;
+		left: 16%;
 	}
 
 	.intro {
@@ -483,10 +511,10 @@ button.content-switch {
 	font-family: 'Lato', sans-serif;
 	position: absolute;
 	cursor: pointer;
-	top: 100%;
-	right: 5%;
-	-webkit-transform: translate3d(-50%,-200%,0);
-	transform: translate3d(-50%,-200%,0);
+	top: 87%;
+	right: 6%;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 	padding: 1em 2em;
 	font-size: 0.85em;
 	line-height: 1;
@@ -500,7 +528,66 @@ button.content-switch {
 	transition: transform 0.6s cubic-bezier(.7,0,.3,1), opacity 0.3s, color 0.3s, border-color 0.3s;
 }
 
+button.content-switch-left {
+	border: 2px solid #000;
+	width: 60px;
+	height: 50px;
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: transparent;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	cursor: pointer;
+	top: 87%;
+	left: 6%;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	padding: 1em 2em;
+	font-size: 0.85em;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	outline: none;
+	z-index: 1000;
+	opacity: 0.7;
+	-webkit-transition: -webkit-transform 0.6s cubic-bezier(.7,0,.3,1), opacity 0.3s, color 0.3s, border-color 0.3s;
+	transition: transform 0.6s cubic-bezier(.7,0,.3,1), opacity 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button.content-switch-home {
+	width: 60px;
+	height: 60px;
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: transparent;
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	cursor: pointer;
+	top: 87%;
+	right: 6%;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	padding: 1em 2em;
+	font-size: 0.85em;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	outline: none;
+	z-index: 1000;
+	opacity: 0.7;
+}
+
 .no-js button.content-switch {
+	display: none;
+}
+
+.no-js button.content-switch-left {
 	display: none;
 }
 
@@ -510,6 +597,24 @@ button.content-switch:hover {
 
 button.content-switch::before {
 	content: '\e097';
+	font-family: 'feathericons';
+	speak: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 16px;
+	transform: rotate(-90deg);
+	text-indent: 0;
+	font-size: 1.5em;
+	line-height: 0.75;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: rgb(0, 0, 0);;
+}
+
+button.content-switch-left::before {
+	content: '\e096';
 	font-family: 'feathericons';
 	speak: none;
 	position: absolute;

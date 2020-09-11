@@ -27,7 +27,7 @@ a {
 	color: rgb(3, 102, 214);
 	text-decoration: none;
 	outline: none;
-	margin: 0 0 15px 5px;
+	padding: 0 0 5px 0;
 }
 
 a:hover, a:focus {
@@ -36,6 +36,10 @@ a:hover, a:focus {
 
 a svg {
 	margin: 0 5px -4px 0;
+}
+
+.link-list {
+	margin: 0 0 15px 5px;
 }
 
 .js .codrops-header,
