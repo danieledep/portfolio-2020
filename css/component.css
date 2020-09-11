@@ -382,17 +382,19 @@ top: 5%;
 	top: 32%;
 }
 
+.img22 {
+    height: 27%;
+    right: 17%;
+    top: 50%;
+}
+
 .text-container {
 	position: absolute;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
-	width: 35%;
+	width: 33%;
 	padding-left: 6%;
 	top: 7%;
-}
-
-.js .img-dragger-large .slide h2 {
-
 }
 
 .img-dragger-small .slide h2 {
@@ -402,6 +404,7 @@ top: 5%;
 	width: 100%;
 	text-align: center;
 	color: #34495e;
+	animation: slideUpFade 0.4s 0.1s;
 	-webkit-animation: slideUpFade 0.4s 0.1s;
 }
 
@@ -469,7 +472,16 @@ top: 5%;
 	}
 
 }
-
+@keyframes slideUpFade {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,20px,0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+	}
+}
 
 @-webkit-keyframes slideUpFade {
 	from {
@@ -560,8 +572,6 @@ button.content-switch-left {
 button.content-switch-home {
 	width: 60px;
 	height: 60px;
-	text-indent: 200%;
-	overflow: hidden;
 	white-space: nowrap;
 	background: transparent;
 	color: #000;
@@ -570,18 +580,50 @@ button.content-switch-home {
 	cursor: pointer;
 	top: 87%;
 	right: 6%;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	padding: 1em 2em;
 	font-size: 0.85em;
-	line-height: 1;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	font-weight: 400;
 	outline: none;
 	z-index: 1000;
 	opacity: 0.7;
+	border: none !important;
 }
+
+
+@keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(360deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+    0% { -o-transform: rotate(360deg); }
+    100% { -o-transform: rotate(0deg); }
+}
+
+button.content-switch-home svg  {   
+    animation: spin 2s linear 0s infinite reverse;
+    -moz-animation: 2s linear 0s reverse none infinite spin;
+    -webkit-animation: spin 2s linear 0s infinite reverse;
+    -o-animation: spin 2s linear 0s infinite reverse;
+    -webkit-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+button.content-switch-home svg:hover  {   
+    animation-play-state: running;
+    -o-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
 
 .no-js button.content-switch {
 	display: none;
@@ -598,7 +640,6 @@ button.content-switch:hover {
 button.content-switch::before {
 	content: '\e097';
 	font-family: 'feathericons';
-	speak: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -616,7 +657,6 @@ button.content-switch::before {
 button.content-switch-left::before {
 	content: '\e096';
 	font-family: 'feathericons';
-	speak: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
