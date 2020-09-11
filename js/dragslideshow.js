@@ -133,7 +133,7 @@
 		var self = this;
 		
 		this.slides.forEach( function( slide ) {
-			// clicking the slides when not in isFullscreen mode
+			/* clicking the slides when not in isFullscreen mode
 			slide.addEventListener( 'click', function() {
 				if( self.isFullscreen || self.dd.activity || self.isAnimating ) return false;
 				
@@ -144,10 +144,25 @@
 					self.dd.setStep( self.slides.indexOf( slide ) + 1 );
 				}
 			} );
+			*/
 
 			// reveal content
-			slide.querySelector( 'button.content-switch' ).addEventListener( 'click', function() { self.dd.setStep( self.current + 2 ); } );
+			var buttons = slide.querySelectorAll( 'button' )
+
+			for (var i = 0; i < buttons.length; i++) {
+
+				if (buttons[i].classList.contains("content-switch") )
+					buttons[i].addEventListener('click', function() { self.dd.setStep( self.current + 2 ); });
+
+				if (buttons[i].classList.contains("content-switch-left") )
+					buttons[i].addEventListener('click', function() { self.dd.setStep( self.current ); });
+				
+			}
+
+			//slide.querySelector( 'button.content-switch' ).addEventListener( 'click', function() { self.dd.setStep( self.current  ); } );
 		} );
+
+
 
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
