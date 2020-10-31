@@ -23,6 +23,10 @@ html.js,
 	position: relative;
 }
 
+.link-list {
+	margin: 0 0 10px 5px;
+}
+
 .link{
 	position: absolute !important;
 	z-index: 9999;
@@ -31,7 +35,7 @@ html.js,
 .link-placeholder {
 	position: inherit;
 	cursor: pointer;
-	height: 30px;
+	height: 100%;
    z-index: -1;
    visibility: hidden;
 }
