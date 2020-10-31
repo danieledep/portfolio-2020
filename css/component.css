@@ -23,6 +23,19 @@ html.js,
 	position: relative;
 }
 
+.link{
+	position: absolute !important;
+	z-index: 9999;
+}
+
+.link-placeholder {
+	position: inherit;
+	cursor: pointer;
+	height: 30px;
+   z-index: -1;
+   visibility: hidden;
+}
+
 .js .dragslider {
 	position: absolute;
 	top: 0;
