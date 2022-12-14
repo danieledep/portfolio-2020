@@ -139,7 +139,7 @@ h3 {
 	display: block;
 	font-size: .37em;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	margin: 17px 0 15px 5px;
 }
 
@@ -341,7 +341,7 @@ filter: drop-shadow(-1px 4px 15px  rgba(0,0,0,0.3));
 }
 
 .img12 {
-	height: 44%;
+	height: 64%;
 	right: 7%;
 	top: 16%;
 }
@@ -390,8 +390,8 @@ top: 5%;
 
 .img20 {
 	height: 30%;
-    right: 22%;
-    top: 68%;
+	right: 22%;
+	top: 68%;
 }
 
 .img21 {
@@ -401,9 +401,15 @@ top: 5%;
 }
 
 .img22 {
-    height: 27%;
-    right: 17%;
-    top: 50%;
+	height: 27%;
+	right: 17%;
+	top: 50%;
+}
+
+.img23 {
+	height: 80%;
+	right: 28%;
+	top: 18%;
 }
 
 .text-container {
